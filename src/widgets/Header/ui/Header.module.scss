@@ -6,9 +6,17 @@
 
   .scrollBar {
     .logo {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 20px;
+      padding: 65px 10px 10px;
+      overflow: hidden;
+
       .img {
-        height: 140px;
-        width: 140px;
+        height: 160px;
+        width: 160px;
         border-radius: 50%;
         border: 5px solid #fff;
         background-image: url("../../../shared/assets/icons/avaWBG.png");
@@ -17,19 +25,157 @@
       }
 
       & > h5 {
+        text-align: center;
+        word-break: break-word;
         font-weight: 300;
         text-transform: uppercase;
         letter-spacing: 7px;
         color: var(--primary-accent-color);
       }
+
+      &::after {
+        content: "";
+        width: 343px;
+        height: 261px;
+        position: absolute;
+        border-radius: 50%;
+        left: -85px;
+        z-index: -1;
+        top: -149px;
+        background-color: var(--accent-color);
+      }
     }
 
     .links {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      padding: 40px 0;
 
+      & > a {
+        position: relative;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        cursor: pointer;
+        padding: 10px 40px;
+        text-transform: uppercase;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+        &:last-child {
+          border-bottom: 1px solid transparent;
+        }
+
+        &:after {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          content: '';
+          width: 0;
+          height: 1px;
+          background-color: var(--accent-color);
+          transition: 0.3s width ease-in;
+        }
+
+        &:hover {
+          & > span, & > svg {
+            transform: scale(95%);
+          }
+
+          &:after {
+            width: 100%;
+          }
+        }
+
+        & > * {
+          transition: 0.2s transform ease-in;
+        }
+
+        & > svg {
+          height: 22px;
+          width: 22px;
+        }
+
+        & > span {
+          font-size: 14px;
+          word-break: break-word;
+        }
+      }
     }
   }
 
   .socials {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 50%;
 
+    & > a {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: 0.1s ease-in;
+
+      &:hover {
+        background-color: rgba(47, 191, 113, 0.2);
+        transform: scale(112%);
+
+        &:after {
+          opacity: 1;
+        }
+
+        & > svg {
+          fill: var(--accent-color);
+        }
+      }
+
+      & > svg {
+        width: 22px;
+        height: 22px;
+        fill: var(--primary-accent-color);
+        transition: 0.1s ease-in;
+      }
+
+      &:after {
+        content: 'phone';
+        position: absolute;
+        font-size: 12px;
+        top: -32px;
+        padding: 0 6px;
+        color: var(--primary-accent-color);
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.10);
+        opacity: 0;
+        transition: 0.1s ease-in;
+      }
+    }
+
+    .phone {
+      &:after {
+        content: 'phone';
+      }
+    }
+
+    .gmail {
+      &:after {
+        content: 'gmail';
+      }
+    }
+
+    .cv {
+      &:after {
+        content: 'cv';
+      }
+    }
   }
 }
