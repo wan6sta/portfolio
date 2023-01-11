@@ -1,0 +1,29 @@
+.Skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+
+    > div {
+      width: 60px;
+      height: 60px;
+      padding: 10px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  > span {
+    color: var(--primary-accent-color);
+    text-align: center;
+    font-size: 14px;
+  }
+}

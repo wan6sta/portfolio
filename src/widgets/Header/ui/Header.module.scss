@@ -15,6 +15,7 @@
       overflow: hidden;
 
       .img {
+        z-index: 1;
         height: 160px;
         width: 160px;
         border-radius: 50%;
@@ -34,7 +35,6 @@
       }
 
       &::after {
-        z-index: -1;
         content: "";
         width: 343px;
         height: 261px;
