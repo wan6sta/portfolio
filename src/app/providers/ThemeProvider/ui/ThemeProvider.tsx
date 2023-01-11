@@ -7,7 +7,7 @@ import {
 
 const localStorageTheme = localStorage.getItem(LOCAL_STORAGE_APP_THEME_KEY)
 
-const initialTheme = localStorageTheme as AppTheme || AppTheme.LIGHT
+const initialTheme = (localStorageTheme as AppTheme) || AppTheme.DARK
 
 export const ThemeProvider: FC<PropsWithChildren> = ({ children }) => {
   const [theme, setTheme] = useState<AppTheme>(initialTheme)
