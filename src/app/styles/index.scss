@@ -4,17 +4,39 @@
 @import "./themes/dark";
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #9b9b9b;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2fbf5d;
+  border-radius: 4px;
+}
+
 .app {
   display: flex;
+  flex-direction: row;
   min-height: 100vh;
   width: 100%;
   color: var(--primary-color);
   background-color: var(--bg-color);
   font: var(--font-m);
+  max-height: 100vh;
 }
+
 
 .main {
   display: flex;
+  flex-direction: column;
   flex: 1;
-  padding: 46px;
+  max-height: 100%;
+  overflow: auto;
 }

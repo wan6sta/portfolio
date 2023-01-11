@@ -3,6 +3,7 @@ import { ThemeSwitcher } from 'widgets/ThemeSwitcher'
 import { useTheme } from './providers/ThemeProvider'
 import { cn } from 'shared/lib/cn/cn'
 import { Home } from 'widgets/Main'
+import { Skills } from 'widgets/Skills'
 
 export const App = () => {
   const { theme } = useTheme()
@@ -13,6 +14,7 @@ export const App = () => {
       <ThemeSwitcher />
       <main className='main'>
         <Home />
+        <Skills />
       </main>
     </div>
   )

@@ -11,7 +11,7 @@ export const Home = () => {
           <div className={cls.text}>
             <h6>Hello, I am</h6>
             <h1>
-              <span className={cls.front}>Frontend</span>
+              <span className={cls.front}>Frontend </span>
               <span className={cls.dev}>developer</span>
             </h1>
             <p>Open for your suggestions!</p>

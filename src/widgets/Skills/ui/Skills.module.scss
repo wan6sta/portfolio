@@ -1,0 +1,39 @@
+.Skills {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  min-height: 100vh;
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0;
+    flex: 1;
+
+    .title {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .bgTitle {
+        font-weight: 700;
+        font-size: 102px;
+        position: absolute;
+        color: var(--primary-accent-color);;
+        opacity: 0.05;
+      }
+
+      > h1 {
+        color: var(--primary-accent-color);
+        font-size: 1.75rem;
+      }
+    }
+
+    .skills {
+      .skill {
+
+      }
+    }
+  }
+}

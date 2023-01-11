@@ -1,7 +1,7 @@
 .Header {
+  position: relative;
   height: 100vh;
   width: 250px;
-  position: relative;
   background-color: var(--bg-accent-color);
 
   .scrollBar {
@@ -15,7 +15,6 @@
       overflow: hidden;
 
       .img {
-        z-index: 1;
         height: 160px;
         width: 160px;
         border-radius: 50%;
@@ -35,6 +34,7 @@
       }
 
       &::after {
+        z-index: -1;
         content: "";
         width: 343px;
         height: 261px;
