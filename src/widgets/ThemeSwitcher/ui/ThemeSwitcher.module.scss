@@ -1,0 +1,39 @@
+.ThemeSwitcher {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 22px;
+  top: 22px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+
+  &:hover {
+    transform: rotate(20deg) scale(110%);
+  }
+
+  & > svg {
+    width: 24px;
+    height: 24px;
+    transition: 0.2s ease-in;
+  }
+}
+
+.light {
+  background-color: black;
+
+  & > svg {
+    fill: white;
+  }
+}
+
+.dark {
+  background-color: white;
+
+  & > svg {
+    fill: black;
+  }
+}
