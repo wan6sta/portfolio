@@ -5,9 +5,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
 
 .app {
+  display: flex;
   min-height: 100vh;
   width: 100%;
   color: var(--primary-color);
   background-color: var(--bg-color);
   font: var(--font-m);
+}
+
+.main {
+  display: flex;
+  flex: 1;
+  padding: 46px;
 }

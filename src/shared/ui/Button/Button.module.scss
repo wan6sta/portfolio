@@ -1,0 +1,22 @@
+.Button {
+  background: #2fbf71;
+  color: #fff;
+  box-shadow: 4px 4px var(--primary-accent-color);
+  padding: 0 25px;
+  line-height: 42px;
+  border: 1px solid transparent;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-decoration: none !important;
+  -moz-transition: ease all 0.35s;
+  -o-transition: ease all 0.35s;
+  -webkit-transition: ease all 0.35s;
+  transition: ease all 0.35s;
+
+  &:hover {
+    background: var(--primary-accent-color);
+    color: var(--accent-color);
+    box-shadow: 4px 4px var(--accent-color);
+  }
+}
