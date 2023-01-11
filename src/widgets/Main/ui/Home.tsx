@@ -15,7 +15,12 @@ export const Home = () => {
               <span className={cls.dev}>developer</span>
             </h1>
             <p>Open for your suggestions!</p>
-            <Button>Open CV</Button>
+            <a
+              href='https://drive.google.com/file/d/1MLbB7KNFlR84kjmIUj8LSAgZe0TEpN5l/view?usp=sharing'
+              target='_blank'
+            >
+              <Button>Open CV</Button>
+            </a>
           </div>
           <div className={cls.img}>
             <img src={GifIcon} alt='Loading...' />

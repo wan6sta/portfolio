@@ -42,7 +42,11 @@ export const Header = () => {
         <a href='mailto:wan6sta@gmail.com' className={cls.gmail}>
           <EnvelopeIcon />
         </a>
-        <a className={cls.cv}>
+        <a
+          href='https://drive.google.com/file/d/1MLbB7KNFlR84kjmIUj8LSAgZe0TEpN5l/view?usp=sharing'
+          target='_blank'
+          className={cls.cv}
+        >
           <PortfolioIcon />
         </a>
       </div>
