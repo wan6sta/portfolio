@@ -11,6 +11,10 @@
     position: absolute;
     color: var(--primary-accent-color);;
     opacity: 0.05;
+
+    @media screen and (max-width: 760px) {
+      display: none;
+    }
   }
 
   > h2 {

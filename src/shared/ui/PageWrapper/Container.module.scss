@@ -5,4 +5,18 @@
   padding: 80px 0;
 
   width: 1140px;
+
+  @media screen and (max-width: 1420px) {
+    width: 950px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 80px 20px;
+  }
+
+  @media screen and (max-width: 760px) {
+    padding: 20px;
+  }
 }

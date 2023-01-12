@@ -6,6 +6,18 @@
   row-gap: 150px;
   min-height: auto;
 
+  .title {
+
+  }
+
+  @media screen and (max-width: 570px) {
+    row-gap: 30px;
+
+    .title {
+      margin-bottom: 30px;
+    }
+  }
+
   .skills {
     grid-gap: 20px;
     align-items: normal;
@@ -19,6 +31,10 @@
     max-width: 900px;
     row-gap: 60px;
     width: 100%;
+
+    @media screen and (max-width: 380px) {
+      gap: 0;
+    }
   }
 
   .about {

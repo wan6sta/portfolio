@@ -30,7 +30,7 @@ export const Portfolio = () => {
       <Title bgTitle='portfolio'>My works</Title>
       <div className={cls.worksList}>
         {cards.map(card => (
-          <Card {...card} />
+          <Card key={card.description} {...card} />
         ))}
       </div>
     </PageWrapper>

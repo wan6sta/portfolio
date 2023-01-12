@@ -1,0 +1,25 @@
+.MenuBtn {
+  width: 40px;
+  height: 40px;
+  background-color: #2fbf71;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  display: none;
+  transition: 0.1s ease-in;
+  z-index: 4;
+
+  > svg {
+    fill: white;
+  }
+
+  &:active {
+    transform: scale(105%);
+    opacity: 0.9;
+  }
+
+  @media screen and (max-width: 1420px) {
+    display: block;
+  }
+}

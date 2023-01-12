@@ -1,8 +1,12 @@
 .Header {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100vh;
   width: 250px;
   background-color: var(--bg-accent-color);
+  z-index: 2;
+  transition: 0.2s transform ease-in-out;
 
   .scrollBar {
     .logo {
@@ -46,4 +50,13 @@
       }
     }
   }
+
+  @media screen and (max-width: 1420px) {
+    position: absolute;
+    transform: translateX(-260px);
+  }
+}
+
+.showHeader {
+  transform: translateX(0);
 }

@@ -61,7 +61,9 @@ const skills: SkillProps[] = [
 export const Skills = () => {
   return (
     <PageWrapper className={cls.Skills}>
-      <Title bgTitle='skills'>My skills</Title>
+      <Title className={cls.title} bgTitle='skills'>
+        My skills
+      </Title>
       <div className={cls.skills}>
         {skills.map(({ url, title, description }) => (
           <Skill
