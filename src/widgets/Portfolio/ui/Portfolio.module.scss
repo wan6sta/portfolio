@@ -1,21 +1,14 @@
 .Portfolio {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  row-gap: 150px;
   flex: 1;
-  min-height: 100vh;
-  padding: 80px 0;
 
-  .row {
+  .worksList {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    flex: 1;
-
-    .worksList {
-      display: flex;
-      flex-direction: column;
-      background-color: red;
-      gap: 60px;
-    }
+    gap: 60px;
   }
 }

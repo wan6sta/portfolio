@@ -1,5 +1,5 @@
 import cls from './Skills.module.scss'
-import { PageContainer } from 'shared/ui/PageContainer/PageContainer'
+import { PageWrapper } from 'shared/ui/PageWrapper/PageWrapper'
 import React from 'shared/assets/icons/react.svg'
 import TS from 'shared/assets/icons/typescript-icon.svg'
 import Sass from 'shared/assets/icons/sass.svg'
@@ -60,28 +60,24 @@ const skills: SkillProps[] = [
 
 export const Skills = () => {
   return (
-    <section className={cls.Skills}>
-      <PageContainer>
-        <div className={cls.row}>
-          <Title bgTitle='skills'>My skills</Title>
-          <div className={cls.skills}>
-            {skills.map(({ url, title, description }) => (
-              <Skill
-                description={description}
-                url={url}
-                title={title}
-                key={title}
-              />
-            ))}
-          </div>
-          <p className={cls.about}>
-            More information you can find in my{' '}
-            <a target='_blank' href='https://github.com/wan6sta'>
-              github
-            </a>
-          </p>
-        </div>
-      </PageContainer>
-    </section>
+    <PageWrapper className={cls.Skills}>
+      <Title bgTitle='skills'>My skills</Title>
+      <div className={cls.skills}>
+        {skills.map(({ url, title, description }) => (
+          <Skill
+            description={description}
+            url={url}
+            title={title}
+            key={title}
+          />
+        ))}
+      </div>
+      <p className={cls.about}>
+        More information you can find in my{' '}
+        <a target='_blank' href='https://github.com/wan6sta'>
+          github
+        </a>
+      </p>
+    </PageWrapper>
   )
 }

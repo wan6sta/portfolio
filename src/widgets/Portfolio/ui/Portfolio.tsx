@@ -1,5 +1,5 @@
 import cls from './Portfolio.module.scss'
-import { PageContainer } from 'shared/ui/PageContainer/PageContainer'
+import { PageWrapper } from 'shared/ui/PageWrapper/PageWrapper'
 import { Title } from 'shared/ui/Title/Title'
 import { Card, CardProps } from './Card/Card'
 import cardsImg from 'shared/assets/icons/bgCards.png'
@@ -21,16 +21,13 @@ const cards: CardProps[] = [
 
 export const Portfolio = () => {
   return (
-    <section className={cls.Portfolio}>
-      <PageContainer>
-        <div className={cls.row}></div>
-        <Title bgTitle='portfolio'>My works</Title>
-        <div className={cls.worksList}>
-          {cards.map(card => (
-            <Card {...card} />
-          ))}
-        </div>
-      </PageContainer>
-    </section>
+    <PageWrapper className={cls.Portfolio}>
+      <Title bgTitle='portfolio'>My works</Title>
+      <div className={cls.worksList}>
+        {cards.map(card => (
+          <Card {...card} />
+        ))}
+      </div>
+    </PageWrapper>
   )
 }
