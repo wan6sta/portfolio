@@ -1,0 +1,66 @@
+.Links {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-accent-color);
+  padding: 30px;
+  justify-content: space-between;
+  align-items: center;
+
+  .linksWrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    > a {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+
+      &:hover {
+        color: var(--accent-color);
+      }
+
+      > svg {
+        width: 22px;
+        height: 22px;
+
+        fill: var(--primary-accent-color);
+      }
+
+      > span {
+        font-size: 14px;
+        opacity: 0.9;
+      }
+    }
+  }
+
+  .socialWrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    > span {
+      font-size: 18px;
+    }
+
+    .socials {
+      display: flex;
+      justify-content: space-around;
+
+      > a {
+        &:hover {
+          > svg {
+            fill: var(--accent-color);
+          }
+        }
+
+        > svg {
+          width: 28px;
+          height: 28px;
+          fill: var(--primary-accent-color);
+          transition: 0.2s ease-in-out;
+        }
+      }
+    }
+  }
+}

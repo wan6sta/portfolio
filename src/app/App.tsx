@@ -5,6 +5,7 @@ import { cn } from 'shared/lib/cn/cn'
 import { Home } from 'widgets/Main'
 import { Skills } from 'widgets/Skills'
 import { Portfolio } from 'widgets/Portfolio'
+import { Contact } from 'widgets/Contact'
 
 export const App = () => {
   const { theme } = useTheme()
@@ -16,6 +17,7 @@ export const App = () => {
         <Home />
         <Skills />
         <Portfolio />
+        <Contact />
       </main>
       <ThemeSwitcher />
     </div>
