@@ -73,6 +73,8 @@
   }
 
   .img {
+    position: relative;
+    z-index: 1;
     width: 536px;
     height: 536px;
     border-radius: 50%;
