@@ -4,13 +4,13 @@ import { Title } from 'shared/ui/Title/Title'
 import { Button } from 'shared/ui/Button/Button'
 import { Links } from './Links/Links'
 import { Slide } from 'react-awesome-reveal'
+import { SectionsId } from '../../Header'
 
 export const Contact = () => {
   return (
-    <PageWrapper className={cls.Contact}>
+    <PageWrapper id={SectionsId.contact} className={cls.Contact}>
       <Title bgTitle='Contacts'>Contacts</Title>
-
-      <div className={cls.wrapper}>
+      <div id={SectionsId.contact} className={cls.wrapper}>
         <Links />
         <Slide duration={500} direction={'up'} triggerOnce>
           <form className={cls.form}>

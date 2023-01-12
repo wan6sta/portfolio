@@ -14,6 +14,10 @@ export const Header = () => {
     setShowBtn(prev => !prev)
   }
 
+  const hideNav = () => {
+    setShowBtn(false)
+  }
+
   const clickWindow = (e: MouseEvent) => {
     if (headerRef.current && btnRef.current) {
       const isIncludeHeader = e.composedPath().includes(headerRef.current)
@@ -42,7 +46,7 @@ export const Header = () => {
           <div className={cls.img}></div>
           <h5>Ivan Korablin</h5>
         </div>
-        <Nav />
+        <Nav hideNav={hideNav} />
       </div>
       <Links />
       <MenuBtn ref={btnRef} onClick={toggleShowBtn} />

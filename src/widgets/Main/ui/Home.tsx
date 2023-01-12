@@ -3,10 +3,11 @@ import { Button } from 'shared/ui/Button/Button'
 import GifIcon from 'shared/assets/icons/gif2.gif'
 import { PageWrapper } from 'shared/ui/PageWrapper/PageWrapper'
 import { Bounce, JackInTheBox } from 'react-awesome-reveal'
+import { SectionsId } from 'widgets/Header'
 
 export const Home = () => {
   return (
-    <PageWrapper className={cls.Main}>
+    <PageWrapper id={SectionsId.home} className={cls.Main}>
       <Bounce triggerOnce>
         <div className={cls.text}>
           <h6>Hello, I am</h6>

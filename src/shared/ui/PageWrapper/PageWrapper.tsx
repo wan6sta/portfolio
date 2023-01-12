@@ -4,14 +4,16 @@ import { cn } from '../../lib/cn/cn'
 
 interface Props {
   className?: string
+  id?: string
 }
 
 export const PageWrapper: FC<PropsWithChildren<Props>> = ({
   children,
-  className
+  className,
+  id
 }) => {
   return (
-    <section className={cn(cls.Container, {}, [String(className)])}>
+    <section id={id} className={cn(cls.Container, {}, [String(className)])}>
       {children}
     </section>
   )

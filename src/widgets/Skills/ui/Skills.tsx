@@ -13,6 +13,7 @@ import RHF from 'shared/assets/icons/rhf.png'
 import { Skill, SkillProps } from './Skill/Skill'
 import { Title } from 'shared/ui/Title/Title'
 import { Bounce } from 'react-awesome-reveal'
+import { SectionsId } from '../../Header'
 
 const skills: SkillProps[] = [
   {
@@ -61,7 +62,7 @@ const skills: SkillProps[] = [
 
 export const Skills = () => {
   return (
-    <PageWrapper className={cls.Skills}>
+    <PageWrapper id={SectionsId.skills} className={cls.Skills}>
       <Title className={cls.title} bgTitle='skills'>
         My skills
       </Title>

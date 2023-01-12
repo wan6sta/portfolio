@@ -5,6 +5,7 @@ import { Card, CardProps } from './Card/Card'
 import cardsImg from 'shared/assets/icons/bgCards.png'
 import ulbiImg from 'shared/assets/icons/ulbiBg.png'
 import { Zoom } from 'react-awesome-reveal'
+import { SectionsId } from '../../Header'
 
 const cards: CardProps[] = [
   {
@@ -27,7 +28,7 @@ const cards: CardProps[] = [
 
 export const Portfolio = () => {
   return (
-    <PageWrapper className={cls.Portfolio}>
+    <PageWrapper id={SectionsId.portfolio} className={cls.Portfolio}>
       <Title bgTitle='portfolio'>My works</Title>
       <div className={cls.worksList}>
         <Zoom cascade triggerOnce>
