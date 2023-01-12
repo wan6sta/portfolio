@@ -12,12 +12,12 @@ export const App = () => {
   return (
     <div className={cn('app', {}, [theme])}>
       <Header />
-      <ThemeSwitcher />
       <main className='main'>
         <Home />
         <Skills />
         <Portfolio />
       </main>
+      <ThemeSwitcher />
     </div>
   )
 }

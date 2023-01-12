@@ -1,0 +1,56 @@
+.Nav {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 40px 0;
+
+  & > a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    cursor: pointer;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    &:last-child {
+      border-bottom: 1px solid transparent;
+    }
+
+    &:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      content: '';
+      width: 0;
+      height: 1px;
+      background-color: var(--accent-color);
+      transition: 0.3s width ease-in;
+    }
+
+    &:hover {
+      & > span, & > svg {
+        transform: scale(95%);
+      }
+
+      &:after {
+        width: 100%;
+      }
+    }
+
+    & > * {
+      transition: 0.2s transform ease-in;
+    }
+
+    & > svg {
+      height: 22px;
+      width: 22px;
+    }
+
+    & > span {
+      font-size: 14px;
+      word-break: break-word;
+    }
+  }
+}

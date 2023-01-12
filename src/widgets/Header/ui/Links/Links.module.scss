@@ -1,0 +1,74 @@
+.Links {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 50%;
+
+  & > a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.1s ease-in;
+
+    &:hover {
+      background-color: rgba(47, 191, 113, 0.2);
+      transform: scale(112%);
+
+      &:after {
+        opacity: 1;
+      }
+
+      & > svg {
+        fill: var(--accent-color);
+      }
+    }
+
+    & > svg {
+      width: 22px;
+      height: 22px;
+      fill: var(--primary-accent-color);
+      transition: 0.1s ease-in;
+    }
+
+    &:after {
+      content: 'phone';
+      position: absolute;
+      font-size: 12px;
+      top: -32px;
+      padding: 0 6px;
+      color: var(--primary-accent-color);
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.10);
+      opacity: 0;
+      transition: 0.1s ease-in;
+    }
+  }
+
+  .phone {
+    &:after {
+      content: 'phone';
+    }
+  }
+
+  .gmail {
+    &:after {
+      content: 'gmail';
+    }
+  }
+
+  .cv {
+    &:after {
+      content: 'cv';
+    }
+  }
+}
