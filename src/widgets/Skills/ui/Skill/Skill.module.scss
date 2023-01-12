@@ -9,6 +9,11 @@
   row-gap: 10px;
   position: relative;
 
+  @media screen and (max-width: 380px) {
+    width: 120px;
+    height: 120px;
+  }
+
   .desc {
     position: absolute;
     user-select: none;
