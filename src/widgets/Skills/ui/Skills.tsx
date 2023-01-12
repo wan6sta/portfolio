@@ -1,5 +1,5 @@
 import cls from './Skills.module.scss'
-import { PageContainer } from 'shared/ui/Container/PageContainer'
+import { PageContainer } from 'shared/ui/PageContainer/PageContainer'
 import React from 'shared/assets/icons/react.svg'
 import TS from 'shared/assets/icons/typescript-icon.svg'
 import Sass from 'shared/assets/icons/sass.svg'
@@ -11,18 +11,51 @@ import rtkQ from 'shared/assets/icons/rtkQ.svg'
 import Styled from 'shared/assets/icons/file-type-styled.svg'
 import RHF from 'shared/assets/icons/rhf.png'
 import { Skill, SkillProps } from './Skill/Skill'
+import { Title } from 'shared/ui/Title/Title'
 
 const skills: SkillProps[] = [
-  { title: 'React', url: React },
-  { title: 'TypeScript', url: TS },
-  { title: 'SASS', url: Sass },
-  { title: 'Redux', url: Redux },
-  { title: 'JEST', url: JEST },
-  { title: 'JavaScript', url: JS },
-  { title: 'REST API', url: REST },
-  { title: 'RTK QUERY', url: rtkQ },
-  { title: 'Styled components', url: Styled },
-  { title: 'React hook form', url: RHF }
+  {
+    title: 'React',
+    url: React,
+    description: ''
+  },
+  {
+    title: 'Redux',
+    url: Redux,
+    description: ''
+  },
+  {
+    title: 'JavaScript',
+    url: JS,
+    description: ''
+  },
+  {
+    title: 'TypeScript',
+    url: TS,
+    description: ''
+  },
+  {
+    title: 'REST API',
+    url: REST,
+    description: ''
+  },
+  {
+    title: 'Styled Components',
+    url: Styled,
+    description: ''
+  },
+  {
+    title: 'Sass',
+    url: Sass,
+    description: ''
+  },
+  { title: 'RTK Query', url: rtkQ, description: '' },
+  {
+    title: 'Jest',
+    url: JEST,
+    description: ''
+  },
+  { title: 'React Hook Form', url: RHF, description: '' }
 ]
 
 export const Skills = () => {
@@ -30,15 +63,23 @@ export const Skills = () => {
     <section className={cls.Skills}>
       <PageContainer>
         <div className={cls.row}>
-          <div className={cls.title}>
-            <h1>My skills</h1>
-            <span className={cls.bgTitle}>SKILLS</span>
-          </div>
+          <Title bgTitle='skills'>My skills</Title>
           <div className={cls.skills}>
-            {skills.map(({ url, title }) => (
-              <Skill url={url} title={title} key={title} />
+            {skills.map(({ url, title, description }) => (
+              <Skill
+                description={description}
+                url={url}
+                title={title}
+                key={title}
+              />
             ))}
           </div>
+          <p className={cls.about}>
+            More information you can find in my{' '}
+            <a target='_blank' href='https://github.com/wan6sta'>
+              github
+            </a>
+          </p>
         </div>
       </PageContainer>
     </section>

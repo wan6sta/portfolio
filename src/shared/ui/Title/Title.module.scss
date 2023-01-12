@@ -1,0 +1,20 @@
+.Title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .bgTitle {
+    font-weight: 700;
+    font-size: 122px;
+    user-select: none;
+    position: absolute;
+    color: var(--primary-accent-color);;
+    opacity: 0.05;
+  }
+
+  > h2 {
+    color: var(--primary-accent-color);
+    font-size: 1.75rem;
+  }
+}

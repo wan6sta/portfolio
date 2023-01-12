@@ -2,35 +2,15 @@
   display: flex;
   justify-content: center;
   flex: 1;
-  min-height: 100vh;
+  min-height: 80vh;
 
   .row {
     display: flex;
     flex-direction: column;
     align-items: center;
+    row-gap: 150px;
     padding: 60px 0;
     flex: 1;
-
-    .title {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 260px;
-
-      .bgTitle {
-        font-weight: 700;
-        font-size: 102px;
-        position: absolute;
-        color: var(--primary-accent-color);;
-        opacity: 0.05;
-      }
-
-      > h1 {
-        color: var(--primary-accent-color);
-        font-size: 1.75rem;
-      }
-    }
 
     .skills {
       grid-gap: 20px;
@@ -43,8 +23,16 @@
       gap: 40px;
       justify-content: center;
       max-width: 900px;
-      row-gap: 20px;
+      row-gap: 60px;
       width: 100%;
+    }
+
+    .about {
+      font-size: 18px;
+
+      > a {
+        color: var(--accent-color);
+      }
     }
   }
 }

@@ -1,7 +1,7 @@
 import cls from './Main.module.scss'
 import { Button } from 'shared/ui/Button/Button'
 import GifIcon from 'shared/assets/icons/gif2.gif'
-import { PageContainer } from 'shared/ui/Container/PageContainer'
+import { PageContainer } from 'shared/ui/PageContainer/PageContainer'
 
 export const Home = () => {
   return (

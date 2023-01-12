@@ -13,6 +13,7 @@
   -o-transition: ease all 0.35s;
   -webkit-transition: ease all 0.35s;
   transition: ease all 0.35s;
+  user-select: none;
 
   &:hover {
     background: var(--primary-accent-color);
