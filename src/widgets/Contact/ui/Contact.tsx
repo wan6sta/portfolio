@@ -12,7 +12,12 @@ export const Contact = () => {
       <Title bgTitle='Contacts'>Contacts</Title>
       <div id={SectionsId.contact} className={cls.wrapper}>
         <Links />
-        <Slide duration={500} direction={'up'} triggerOnce>
+        <Slide
+          className={cls.formWrapper}
+          duration={500}
+          direction={'up'}
+          triggerOnce
+        >
           <form className={cls.form}>
             <div className={cls.inputs}>
               <input placeholder='Name' type='text' />
