@@ -41,6 +41,10 @@
     font-size: 18px;
     opacity: 0.9;
 
+    @media screen and (max-width: 570px) {
+      text-align: center;
+    }
+
     > a {
       color: var(--accent-color);
     }

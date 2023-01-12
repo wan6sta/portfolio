@@ -24,6 +24,10 @@
       width: 100%;
     }
 
+    @media screen and (max-width: 570px) {
+      align-items: center;
+    }
+
     > h3 {
       font-size: 22px;
       color: var(--accent-color);
