@@ -39,7 +39,7 @@ export const Particle = () => {
             events: {
               onClick: {
                 enable: true,
-                mode: 'push'
+                mode: ''
               },
               onHover: {
                 enable: true,
@@ -52,7 +52,7 @@ export const Particle = () => {
                 quantity: 4
               },
               repulse: {
-                distance: 200,
+                distance: 100,
                 duration: 0.4
               }
             }
