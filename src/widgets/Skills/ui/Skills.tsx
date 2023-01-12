@@ -12,6 +12,7 @@ import Styled from 'shared/assets/icons/file-type-styled.svg'
 import RHF from 'shared/assets/icons/rhf.png'
 import { Skill, SkillProps } from './Skill/Skill'
 import { Title } from 'shared/ui/Title/Title'
+import { Bounce } from 'react-awesome-reveal'
 
 const skills: SkillProps[] = [
   {
@@ -65,14 +66,16 @@ export const Skills = () => {
         My skills
       </Title>
       <div className={cls.skills}>
-        {skills.map(({ url, title, description }) => (
-          <Skill
-            description={description}
-            url={url}
-            title={title}
-            key={title}
-          />
-        ))}
+        <Bounce duration={500} triggerOnce cascade>
+          {skills.map(({ url, title, description }) => (
+            <Skill
+              description={description}
+              url={url}
+              title={title}
+              key={title}
+            />
+          ))}
+        </Bounce>
       </div>
       <p className={cls.about}>
         More information you can find in my{' '}

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.10.5",
     "@heroicons/react": "^2.0.13",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
@@ -12,6 +13,7 @@
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "react": "^18.2.0",
+    "react-awesome-reveal": "^4.1.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "react-tsparticles": "^2.7.1",

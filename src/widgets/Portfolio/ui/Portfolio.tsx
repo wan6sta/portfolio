@@ -4,6 +4,7 @@ import { Title } from 'shared/ui/Title/Title'
 import { Card, CardProps } from './Card/Card'
 import cardsImg from 'shared/assets/icons/bgCards.png'
 import ulbiImg from 'shared/assets/icons/ulbiBg.png'
+import { Zoom } from 'react-awesome-reveal'
 
 const cards: CardProps[] = [
   {
@@ -29,9 +30,11 @@ export const Portfolio = () => {
     <PageWrapper className={cls.Portfolio}>
       <Title bgTitle='portfolio'>My works</Title>
       <div className={cls.worksList}>
-        {cards.map(card => (
-          <Card key={card.description} {...card} />
-        ))}
+        <Zoom cascade triggerOnce>
+          {cards.map(card => (
+            <Card key={card.description} {...card} />
+          ))}
+        </Zoom>
       </div>
     </PageWrapper>
   )
