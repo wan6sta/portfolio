@@ -4,6 +4,7 @@ import { useTheme } from './providers/ThemeProvider'
 import { cn } from 'shared/lib/cn/cn'
 import { Home } from 'widgets/Main'
 import { Skills } from 'widgets/Skills'
+import { Portfolio } from 'widgets/Portfolio'
 
 export const App = () => {
   const { theme } = useTheme()
@@ -15,6 +16,7 @@ export const App = () => {
       <main className='main'>
         <Home />
         <Skills />
+        <Portfolio />
       </main>
     </div>
   )
