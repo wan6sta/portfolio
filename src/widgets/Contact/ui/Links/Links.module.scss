@@ -5,11 +5,12 @@
   padding: 30px;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
 
   @media screen and (max-width: 1000px) {
     row-gap: 40px;
   }
-  
+
   @media screen and (max-width: 760px) {
     background-color: (transparent);
   }
