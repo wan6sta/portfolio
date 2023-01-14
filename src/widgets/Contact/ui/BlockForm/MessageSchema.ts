@@ -7,7 +7,7 @@ export const MessageSchema = Yup.object({
     .required('Required'),
   text: Yup.string()
     .min(2, 'Too Short!')
-    .max(50, 'Too Long!')
+    .max(500, 'Too Long!')
     .required('Required'),
   gmail: Yup.string().email('Invalid email').required('Required')
 })
