@@ -57,7 +57,7 @@ const skills: SkillProps[] = [
     url: JEST,
     description: ''
   },
-  { title: 'React Hook Form', url: RHF, description: '' }
+  { title: 'React Hook BlockForm', url: RHF, description: '' }
 ]
 
 export const Skills = () => {

@@ -36,7 +36,7 @@ export const Nav: FC<Props> = ({ hideNav }) => {
     <nav className={cls.Nav}>
       {navItems.map(el => {
         return (
-          <a onClick={hideNav} href={'#' + el.id}>
+          <a key={el.id} onClick={hideNav} href={'#' + el.id}>
             {el.title}
           </a>
         )

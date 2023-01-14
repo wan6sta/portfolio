@@ -16,88 +16,15 @@
     display: flex;
     justify-content: center;
     column-gap: 30px;
+    flex-wrap: wrap;
 
     @media screen and (max-width: 1000px) {
-      flex-wrap: wrap;
       row-gap: 20px;
     }
 
-    .formWrapper {
-      display: flex;
-      flex: 1;
-
-      .form {
-        background-color: var(--bg-accent-color);
-        display: flex;
-        flex-direction: column;
-        padding: 30px;
-        row-gap: 20px;
-
-        @media screen and (max-width: 350px) {
-          // align-items: center;
-        }
-
-        @media screen and (max-width: 740px) {
-          width: 100%;
-        }
-
-        .inputs {
-          display: flex;
-          justify-content: space-between;
-          column-gap: 40px;
-
-          @media screen and (max-width: 500px) {
-            flex-direction: column;
-            align-items: center;
-            row-gap: 20px;
-            > input {
-              width: 100%;
-            }
-          }
-        }
-
-        & input {
-          width: 260px;
-          max-width: 320px;
-          color: var(--primary-accent-color);
-          padding: 0 10px;
-          background: none;
-          border: 1px solid var(--border-primary);
-          border-radius: 0;
-          box-shadow: none;
-          font-size: 14px;
-          height: calc(2em + 0.75rem + 2px);
-
-          @media screen and (max-width: 740px) {
-            width: 100%;
-          }
-        }
-
-        .textarea {
-          width: 100%;
-          min-height: 120px;
-          resize: none;
-          color: var(--primary-accent-color);
-          padding: 10px;
-          background: none;
-          border: 1px solid var(--border-primary);
-          border-radius: 0;
-          box-shadow: none;
-          font-size: 14px;
-
-          &:focus {
-            outline: none;
-          }
-        }
-
-        > button {
-          width: 180px;
-
-          @media screen and (max-width: 450px) {
-            align-self: center;
-          }
-        }
-      }
+    @media screen and (max-width: 935px) {
+      flex-direction: column;
+      align-items: center;
     }
   }
 }

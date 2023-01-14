@@ -7,6 +7,7 @@ import { Contact } from 'widgets/Contact'
 import { ThemeSwitcher } from 'widgets/ThemeSwitcher'
 import { Header } from 'widgets/Header'
 import { Particle } from '../widgets/Particles'
+import { Toaster } from 'react-hot-toast'
 
 export const App = () => {
   const { theme } = useTheme()
@@ -22,6 +23,7 @@ export const App = () => {
         <Contact />
       </main>
       <ThemeSwitcher />
+      <Toaster />
     </div>
   )
 }

@@ -11,7 +11,7 @@ const cards: CardProps[] = [
   {
     title: 'Learning by cards',
     description:
-      'Applications for learning by cards. Stack: React, Redux, TypeScript, Styled-components, Redux-toolkit, Vite, RTK Query, React Router DOM v6, REST API, Redux Hook Form + Yup',
+      'Applications for learning by cards. Stack: React, Redux, TypeScript, Styled-components, Redux-toolkit, Vite, RTK Query, React Router DOM v6, REST API, Redux Hook BlockForm + Yup',
     cardImg: cardsImg,
     git: 'https://github.com/wan6sta/cards-quiz',
     link: 'https://cards-quiz.vercel.app'
