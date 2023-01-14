@@ -31,7 +31,7 @@ export const Portfolio = () => {
     <PageWrapper id={SectionsId.portfolio} className={cls.Portfolio}>
       <Title bgTitle='portfolio'>My works</Title>
       <div className={cls.worksList}>
-        <Zoom cascade triggerOnce>
+        <Zoom className={cls.card} cascade triggerOnce>
           {cards.map(card => (
             <Card key={card.description} {...card} />
           ))}

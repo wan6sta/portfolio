@@ -16,4 +16,12 @@
     flex-direction: column;
     gap: 60px;
   }
+
+  .card {
+    &:nth-child(even) {
+      > div {
+        flex-direction: row-reverse;
+      }
+    }
+  }
 }
